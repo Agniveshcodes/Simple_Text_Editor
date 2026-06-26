@@ -50,7 +50,7 @@ def saveFile () :
     
     if filePath:
         try:
-            with open(filePath, "r") as newFile:
+            with open(filePath, "w") as newFile:
                 text.delete(1.0, tk.END)
                 text.insert(tk.END, newFile.read())
         except Exception as e:
